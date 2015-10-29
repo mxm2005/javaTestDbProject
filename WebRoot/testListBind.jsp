@@ -22,7 +22,7 @@
 .content table th,td{border:solid 1px #999999;}
 </style> -->
 <style type="text/css">
-    .ko-grid { margin-bottom: 1em; width: 25em; border: 1px solid silver; background-color:White; }
+    .ko-grid { margin-bottom: 1em; width: 100%; border: 1px solid silver; background-color:White; }
     .ko-grid th { text-align:left; background-color: Black; color:White; }
     .ko-grid td, th { padding: 0.4em; }
     .ko-grid tr:nth-child(odd) { background-color: #DDD; }
@@ -34,9 +34,10 @@
 </head>
 
 <body>
-	This is my JSP page.
+	<strong>JSON-Data:</strong>
 	<br>
 	<%=str %>
+	<br><strong>Knockout-Grid:</strong>
 	<div class="content" data-bind='simpleGrid: gridViewModel'></div>
 </body>
 </html>
